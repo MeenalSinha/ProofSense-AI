@@ -1159,8 +1159,7 @@ POST /api/verify
                 font=dict(family='Inter'),
                 hoverlabel=dict(
                     bgcolor="white",
-                    font_size=13,
-                    font_family="Inter"
+                    font=dict(size=13, family="Inter", color="#6A5D7B")
                 ),
             )
             
