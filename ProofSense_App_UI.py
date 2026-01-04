@@ -1132,7 +1132,7 @@ POST /api/verify
                 warning_details = []
                 for i, claim in enumerate(result.claims, 1):
                     if claim.warnings:
-                        warning_text = ', '.join([f"**{w.split(': ')[1].strip(\"'\")}**" if ': ' in w else f"**{w}**" for w in claim.warnings])
+                        warning_text = ', '.join([f"**{w.split(': ')[1].strip(chr(39))}**" if ': ' in w else f"**{w}**" for w in claim.warnings])
                         warning_details.append({
                             'Claim #': f"Claim {i}",
                             'Pattern Detected': warning_text,
