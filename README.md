@@ -1,7 +1,6 @@
 # 🔍 ProofSense AI - Hallucination-Aware LLM Guardrail
 
 **Track:** AI / Developer Tools  
-**Score:** 49/50
 
 ## 🎯 Problem
 LLMs hallucinate confidently, but no practical tool shows **why** an answer may be unreliable.
