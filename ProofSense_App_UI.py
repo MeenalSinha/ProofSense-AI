@@ -1060,7 +1060,7 @@ POST /api/verify
                 ),
                 hole=0.45,
                 textinfo='label+percent',
-                textfont=dict(size=14, color='white', family='Inter', weight=600),
+                textfont=dict(size=14, color='white', family='Inter'),
                 hovertemplate='<b>%{label}</b><br>Count: %{value}<br>Percentage: %{percent}<extra></extra>',
                 pull=[0.05 if v == max(values_filtered) else 0 for v in values_filtered],  # Pull out the largest slice
             )])
@@ -1068,7 +1068,7 @@ POST /api/verify
             fig.update_layout(
                 title=dict(
                     text="Claim Risk Distribution",
-                    font=dict(size=18, color='#6A5D7B', family='Inter', weight=700)
+                    font=dict(size=18, color='#6A5D7B', family='Inter')
                 ),
                 height=450,
                 showlegend=True,
@@ -1129,7 +1129,7 @@ POST /api/verify
             fig2.update_layout(
                 title=dict(
                     text="Individual Claim Verifiability Confidence Scores",
-                    font=dict(size=18, color='#6A5D7B', family='Inter', weight=700)
+                    font=dict(size=18, color='#6A5D7B', family='Inter')
                 ),
                 xaxis=dict(
                     title="Claims",
